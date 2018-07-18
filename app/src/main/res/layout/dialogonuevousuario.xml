@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/nebrascafondopng">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/escudo"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <!--
+            app:mtf_animationDuration="1000"
+            app:mtf_cardColor="@color/cardview_dark_background"
+            app:mtf_labelColor="@android:color/holo_red_dark"
+            app:mtf_openKeyboardOnFocus="true"
+            -->
+
+            <EditText
+                android:id="@+id/nombreusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Usuario"
+                android:maxLines="1"
+                android:textColor="#ffb93221"
+                android:textColorHint="@android:color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_hasFocus="false"
+            app:mtf_image="@drawable/llave"
+            app:mtf_openKeyboardOnFocus="true">
+
+            <!--
+            app:mtf_animationDuration="1000"
+            app:mtf_cardColor="@color/cardview_dark_background"
+            app:mtf_labelColor="@android:color/holo_red_dark"
+            app:mtf_openKeyboardOnFocus="true"
+            -->
+
+            <EditText
+                android:id="@+id/claveusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clave Usuario"
+                android:maxLines="1"
+                android:textColor="#ffb93221"
+                android:textColorHint="@android:color/white"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+        <Spinner
+            android:id="@+id/spinnertask"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/side_nav_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="2.63">
+            <info.hoang8f.widget.FButton
+                android:id="@+id/sqlitecargarimagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:text="Imagen"
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="#ffff9800"
+                fbutton:shadowEnabled="true" />
+
+
+            <ImageView
+                android:id="@+id/imagensqlite2"
+                android:layout_width="192dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="20dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true">
+
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sqliteinsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:layout_weight="0.31"
+            android:text="Insertar"
+            android:textColor="@android:color/white"
+            fbutton:buttonColor="@color/fbutton_color_pomegranate"
+            fbutton:shadowEnabled="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

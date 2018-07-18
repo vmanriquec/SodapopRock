@@ -1,0 +1,116 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:background="@color/cardview_light_background">
+
+        <TextView
+            android:id="@+id/textochat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#CC0000" />
+
+        <TextView
+            android:id="@+id/cvclave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textochat"
+            android:layout_alignStart="@+id/textochat"
+            android:layout_below="@+id/textochat"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#d42626" />
+
+        <TextView
+            android:id="@+id/cvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linea"
+            android:layout_toLeftOf="@+id/compartir"
+            android:layout_toStartOf="@+id/compartir"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/cvalmacen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/cvclave"
+            android:layout_alignStart="@+id/cvclave"
+            android:layout_below="@+id/cvclave"
+            android:text="TextView"
+            android:textColor="#d42626" />
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_above="@+id/compartir"
+            android:layout_toRightOf="@+id/imagensqlite"
+            android:background="#CC0000">
+
+        </View>
+
+        <Button
+            android:id="@+id/sqliteeditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cvalmacen"
+            android:layout_alignTop="@+id/linea"
+            android:background="@drawable/side_nav_bar"
+            android:text="Editar" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sqliteeliminar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/com_facebook_likeview_text_size"
+            android:layout_weight="0.31"
+            android:background="@drawable/editarusuario"
+            android:text="Eliminar"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            card_view:buttonColor="@color/fbutton_color_alizarin"
+            fbutton:buttonColor="@color/fbutton_color_pomegranate"
+            fbutton:shadowEnabled="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/compartir"
+            android:layout_below="@+id/linea" />
+
+        <ImageView
+            android:id="@+id/compartir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/material_blue_grey_800"
+            android:src="@android:drawable/ic_menu_share" />
+
+        <ImageView
+            android:id="@+id/imagensqlite"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@+id/cvclave"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/escudo" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

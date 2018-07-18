@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/user"
+            android:title="Maestras"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Sala de Chat" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Pizarra" />
+    </group>
+
+    <item android:title="Estadisticas">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="+" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/beer"
+                android:title="++" />
+        </menu>
+    </item>
+
+</menu>

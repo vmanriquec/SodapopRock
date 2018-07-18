@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+            android:layout_weight="0.47">
+
+            <RelativeLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/atras"
+                android:background="@color/mini_fab_title_background_tint"
+                android:paddingRight="15dp">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/overlapImage"
+                android:layout_width="121dp"
+                android:layout_height="110dp"
+                android:layout_alignParentStart="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/redondearimagen"
+                android:src="@drawable/ideae" />
+
+            <TextView
+                android:id="@+id/txtenviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtdetalle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="40dp"
+                android:layout_toEndOf="@+id/overlapImage"
+                android:paddingLeft="10dp"
+                android:text="Datos de Pedido"
+                android:textColor="@color/colorprincipal"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/descri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_dialog"
+                android:layout_alignStart="@+id/background"
+                android:layout_toEndOf="@+id/atras"
+                android:layout_weight="0.80"
+                android:ems="10"
+                android:hint="Datos adicionales de pedido"
+                android:inputType="textMultiLine"
+                android:textColor="@color/authui_inputTextColorDark" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/background"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/circulofondo"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Enviar"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/atras"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_alignEnd="@+id/overlapImage"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="23dp"
+                android:background="@drawable/atras" />
+
+            <TextView
+                android:id="@+id/txtdetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/background"
+                android:layout_below="@+id/overlapImage"
+                android:layout_marginTop="28dp"
+                android:layout_toEndOf="@+id/overlapImage"
+                android:inputType="textMultiLine"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txttotalpedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_dialog"
+                android:layout_alignBottom="@+id/btn_dialog"
+                android:layout_toStartOf="@+id/btn_dialog"
+                android:paddingRight="10dp"
+                android:text="TextView"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

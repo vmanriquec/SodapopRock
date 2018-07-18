@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:configChanges="orientation"
+	android:orientation="vertical"
+	android:weightSum="1">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:weightSum="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:background="#bb0505"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textViewmesero"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@color/colorprincipal"
+					android:hint="mesero"
+					android:text="mesero"
+					android:textAlignment="textStart"
+					android:textColor="#ffffe921"
+					android:textIsSelectable="true"
+					android:textSize="15dp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/textalmacen"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_weight="1"
+					android:background="@color/colorprincipal"
+					android:paddingRight="2dp"
+					android:text="Text"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="#fefcfc"
+					android:textIsSelectable="true"
+					android:textSize="14sp" />
+
+				<Spinner
+					android:id="@+id/spinnermesas"
+					android:layout_width="wrap_content"
+					android:layout_height="20dp"
+					android:background="@color/colorprincipal"
+					android:popupBackground="#ffffb10a"
+					android:visibility="visible" />
+
+				<TextView
+					android:id="@+id/textViewfechadehoy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:background="@color/colorprincipal"
+					android:textColor="#ffffe921"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<HorizontalScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="75dp"
+			android:layout_gravity="center_horizontal|right"
+			android:background="@color/authui_inputTextColor"
+			android:clickable="true">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/mipollo"
+					android:layout_width="68dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/tabcirculoa"
+					android:src="@drawable/pollopng" />
+
+				<ImageView
+					android:id="@+id/migaseosa"
+					android:layout_width="68dp"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/tabcirculob"
+					android:src="@drawable/gaseosa" />
+
+				<ImageView
+					android:id="@+id/micerveza"
+					android:layout_width="68dp"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/tabcirculoe"
+					android:src="@drawable/chapa" />
+
+				<ImageView
+					android:id="@+id/mihamburguesa"
+					android:layout_width="68dp"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/tabcirculod"
+					android:src="@drawable/hamburger" />
+
+				<ImageView
+					android:id="@+id/mitrago"
+					android:layout_width="68dp"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="5dp"
+					android:layout_marginRight="5dp"
+					android:layout_marginTop="5dp"
+					android:background="@drawable/tabcirculoc"
+					android:src="@drawable/vino" />
+
+				<ImageView
+					android:id="@+id/miagua"
+					android:layout_width="58dp"
+					android:layout_height="match_parent"
+					android:src="@drawable/agua" />
+
+				<ImageView
+					android:id="@+id/mihelado"
+					android:layout_width="58dp"
+					android:layout_height="wrap_content"
+					android:src="@drawable/helado" />
+
+				<ImageView
+					android:id="@+id/mitorta"
+					android:layout_width="58dp"
+					android:layout_height="wrap_content"
+					android:src="@drawable/torta" />
+
+				<ImageView
+					android:id="@+id/micombo"
+					android:layout_width="58dp"
+					android:layout_height="wrap_content"
+					android:src="@drawable/combopng" />
+
+			</LinearLayout>
+
+		</HorizontalScrollView>
+
+	</LinearLayout>
+
+
+	<TabHost
+		android:id="@android:id/tabhost"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/nebrascafondodesenfocado">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="match_parent"
+				android:layout_height="55dp"
+				android:alwaysDrawnWithCache="true"
+				android:animateLayoutChanges="true"
+				android:animationCache="true"
+				android:background="@android:color/background_light"
+				android:elevation="5dp"
+				android:theme="@style/mitema" />
+
+			<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<LinearLayout
+					android:id="@+id/tab1"
+					android:layout_width="match_parent"
+					android:layout_height="414dp"
+					android:background="@drawable/nebrascafondopocobrillopng"
+					android:baselineAligned="true"
+					android:orientation="vertical"
+					android:weightSum="1">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_weight="0.91"
+						tools:context=".ListViewActivity">
+
+						<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+							android:id="@+id/carddetallepedido"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:layout_alignParentBottom="true"
+							android:layout_alignParentStart="true"
+							android:layout_alignParentTop="true"
+							android:layout_marginLeft="10dp"
+							android:padding="3dp"
+							android:scrollbars="vertical">
+
+						</android.support.v7.widget.RecyclerView>
+
+					</RelativeLayout>
+
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:background="@color/colorprincipal"
+						android:gravity="bottom">
+
+						<TextView
+							android:id="@+id/txtobseravciones"
+							android:layout_width="54dp"
+							android:layout_height="45dp"
+							android:layout_gravity="center_vertical"
+							android:layout_marginTop="3dp"
+							android:background="@drawable/notas"
+							android:textColor="@color/authui_inputTextColor" />
+
+						<TextView
+							android:id="@+id/txteditarpedido"
+							android:layout_width="39dp"
+							android:layout_height="wrap_content"
+							android:textColor="@color/colorprincipalamarillo" />
+
+						<EditText
+							android:id="@+id/editText"
+							android:layout_width="wrap_content"
+							android:layout_height="match_parent"
+							android:ems="10"
+							android:inputType="textMultiLine"
+							android:maxLines="2" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/tab2"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/nebrascafondopocobrillopng"
+					android:orientation="vertical">
+
+					<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+						android:id="@+id/cardproductos"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="1dp"
+						android:scrollbars="vertical">
+
+					</android.support.v7.widget.RecyclerView>
+
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/tab3"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/nebrascafondopocobrillopng"
+					android:baselineAligned="true"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/nebrascafondopocobrillopng"
+						android:gravity="center_horizontal"
+						android:orientation="vertical"
+						android:paddingLeft="15dp"
+						android:paddingTop="15dp"
+						android:weightSum="1">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginLeft="1dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="5dp"
+							android:orientation="horizontal"
+							android:weightSum="1">
+
+							<Button
+								android:id="@+id/buno"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:layout_marginRight="5dp"
+								android:background="@drawable/buttonmesasquenoexistenbackground"
+								android:paddingLeft="10dp"
+								android:paddingRight="15dp"
+								android:text="1"
+								android:textSize="15dp"
+								android:textStyle="bold" />
+
+							<Button
+								android:id="@+id/bdos"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_centerVertical="true"
+								android:layout_toRightOf="@+id/imageButtonmesa5"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="15dp"
+								android:text="2" />
+
+							<Button
+								android:id="@+id/btres"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_above="@+id/imageButtonmesa13"
+								android:layout_marginLeft="5dp"
+								android:layout_toRightOf="@+id/imageButtonmesa7"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="5dp"
+								android:text="3" />
+
+							<Button
+								android:id="@+id/bcuatro"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_alignLeft="@+id/imageButtonmesa10"
+								android:layout_alignStart="@+id/imageButtonmesa10"
+								android:layout_alignTop="@+id/imageButtonmesa6"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="15dp"
+								android:text="4" />
+
+							<Button
+								android:id="@+id/bcinco"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="5" />
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginLeft="1dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="5dp"
+							android:orientation="horizontal"
+							android:paddingTop="15dp"
+							android:weightSum="1">
+
+							<Button
+								android:id="@+id/bseis"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:layout_marginRight="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="6" />
+
+							<Button
+								android:id="@+id/bsiete"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="7" />
+
+							<Button
+								android:id="@+id/bocho"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="8" />
+
+							<Button
+								android:id="@+id/bnueve"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="9" />
+
+							<Button
+								android:id="@+id/bdiez"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="10" />
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_horizontal"
+							android:layout_marginLeft="1dp"
+							android:layout_marginRight="5dp"
+							android:layout_marginTop="5dp"
+							android:orientation="horizontal"
+							android:paddingTop="15dp"
+							android:weightSum="1">
+
+							<Button
+								android:id="@+id/bonce"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:layout_marginRight="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="11" />
+
+							<Button
+								android:id="@+id/bdoce"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="12" />
+
+							<Button
+								android:id="@+id/btrece"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="13" />
+
+							<Button
+								android:id="@+id/bcatorce"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="14" />
+
+							<Button
+								android:id="@+id/bquince"
+								android:layout_width="55dp"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="5dp"
+								android:background="@drawable/buttonmesasbackground"
+								android:paddingRight="10dp"
+								android:text="15" />
+
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="20dp"
+							android:gravity="center_horizontal"
+							android:orientation="horizontal">
+
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/tab4"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:background="@drawable/nebrascafondopocobrillopng"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="fill_parent"
+						android:layout_height="30dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="20dp"
+						android:gravity="center_horizontal"
+						android:text="Cambios de mesa"
+						android:textSize="20dp"
+						android:textStyle="bold" />
+
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="22dp"
+							android:layout_gravity="center_vertical"
+							android:text="Mesa actual:"
+							android:textAppearance="?android:attr/textAppearanceSmall" />
+
+						<NumberPicker
+							android:id="@+id/numberPicker2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:text="Nueva Ubicacion:" />
+
+						<NumberPicker
+							android:id="@+id/numberPicker"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content" />
+
+					</LinearLayout>
+
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="73dp"
+						android:gravity="center_horizontal"
+						android:orientation="horizontal">
+
+						<Button
+							android:id="@+id/btcambiar"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Cambiar Mesa" />
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<TextView
+					android:id="@+id/idpedidorecuperado"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ffffd734" />
+
+				<TextView
+					android:id="@+id/textomesaarecuperar"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:textColor="#ffff0300"
+					android:textSize="15dp" />
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+	</TabHost>
+
+
+
+</LinearLayout>
+

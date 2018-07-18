@@ -1,0 +1,15 @@
+<manifest package="com.jaychang.slm"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".FbLoginHiddenActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            />
+        <activity
+            android:name=".GoogleLoginHiddenActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            />
+    </application>
+
+</manifest>
