@@ -10,7 +10,10 @@
     <color name="primary_text_material_light">#B61F34</color>
     <color name="secondary_text_material_light">#eda0a7</color>
     <color name="secondary_text_material_dark">#edbabe</color>
-    <color name="saffron">#f2cd86</color>
+    <color name="titulo">#327083</color>
+
+
+<color name="saffron">#f2cd86</color>
     <color name="sienna">#eb6460</color>
     <color name="green">#FFFFFF</color>
     <color name="purple">#7c57e4</color>

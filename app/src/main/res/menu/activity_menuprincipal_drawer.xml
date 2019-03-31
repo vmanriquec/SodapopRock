@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group >
+    <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/user"
+            android:enabled="true"
+            android:icon="@drawable/chapa"
             android:title="Maestras"
             android:visible="true" />
         <item
@@ -25,11 +26,11 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@mipmap/icon_car"
                 android:title="+" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/beer"
+                android:icon="@drawable/agua"
                 android:title="++" />
         </menu>
     </item>
